@@ -5,6 +5,9 @@
 */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Edu\ExtensionAttribute\Api\Data\EduNavisionInterface" type="Edu\ExtensionAttribute\Model\Data\EduNavision" />
+    <preference for="Edu\ExtensionAttribute\Api\EduNavisionRepositoryInterface" type="\Edu\ExtensionAttribute\Model\EduNavisionRepository" />
+
     <type name="Magento\Catalog\Api\ProductRepositoryInterface">
         <plugin name="navision_attribute"
                 type="Edu\ExtensionAttribute\Plugin\NavisionAttributes"/>
